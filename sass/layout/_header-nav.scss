@@ -1,0 +1,16 @@
+.main-nav {
+  @include flex-center();
+  // display: flex;
+  // align-items: center;
+  // position: relative;
+}
+
+.main-nav-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-container {
+  border-bottom: 1px solid #ececec;
+}

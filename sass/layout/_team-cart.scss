@@ -1,0 +1,68 @@
+.our-team {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.our-team > .team {
+  background-color: $white-bg-color;
+  text-align: center;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team .worker {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.background-team {
+  background-color: $our-team;
+}
+
+// .team-container {
+//   margin-bottom: 0;
+//   width: 1200px;
+//   margin-right: auto;
+//   margin-left: auto;
+
+//   padding-left: 15px;
+//   padding-right: 15px;
+
+//   background-color: $our-team;
+// }
+
+.section .worker {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  padding-top: 30px;
+}
+
+.section .section-title > .worker {
+  padding-top: 30px;
+}
+
+.section .profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-top: 10px;
+}
+
+.our-team .team-cart {
+  padding-bottom: 30px;
+}

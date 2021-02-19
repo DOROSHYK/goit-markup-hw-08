@@ -1,0 +1,14 @@
+.button {
+  color: $white-bg-color;
+  background-color: $color-forces-color;
+  font-family: inherit;
+  border-radius: 4px;
+  border-color: transparent;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  padding: 10px 32px;
+  margin-top: 30px;
+  cursor: pointer;
+}

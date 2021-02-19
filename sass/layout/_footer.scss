@@ -1,0 +1,41 @@
+footer {
+  background-color: $footer-background-color;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.logotype {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.main-addres {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.main-addres .mail-link {
+  margin-bottom: 6px;
+  margin-top: 9px;
+}
+
+.main-addres .tell-link {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+footer .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: var(--main-letter-spacing);
+
+  &:hover,
+  &:focus {
+    color: $color-forces-color;
+  }
+}
