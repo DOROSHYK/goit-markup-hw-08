@@ -684,14 +684,17 @@ ul {
 }
 
 .container-footer {
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0;
-  display: flex;
-  align-items: baseline;
+}
+
+@media screen and (min-width: 480px) {
+  .container-footer {
+    width: 480px;
+  }
 }
 
 footer {
