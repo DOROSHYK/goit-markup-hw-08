@@ -71,7 +71,7 @@
 
 .site-nav {
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
   // margin-top: 0;
@@ -89,9 +89,11 @@
   }
 
   @media screen and (min-width: 768px) {
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -220,6 +222,14 @@
   .text-secondary {
     @media screen and (min-width: 480px) {
       font-size: 34px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
     }
   }
   .item .link {

@@ -184,7 +184,6 @@ ul {
 
 .site-nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -200,8 +199,15 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .site-nav {
+    font-size: 14px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -321,6 +327,18 @@ ul {
 @media screen and (min-width: 768px) and (min-width: 480px) {
   .text-secondary {
     font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .text-secondary {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .text-secondary {
+    font-size: 14px;
   }
 }
 
