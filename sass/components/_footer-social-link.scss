@@ -1,5 +1,16 @@
 .webstudio-cont {
-  margin-left: 70px;
+  margin-left: 0px;
+
+  // @media screen and (min-width: 1200px) {
+  //   .webstudio-cont {
+  //     margin-left: 70px;
+  //   }
+  // }
+}
+@media screen and (min-width: 1200px) {
+  .webstudio-cont {
+    margin-left: 70px;
+  }
 }
 
 .our-social-link {
