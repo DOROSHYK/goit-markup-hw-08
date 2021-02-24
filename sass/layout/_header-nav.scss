@@ -3,12 +3,13 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    position: relative;
   }
 }
 
@@ -17,6 +18,9 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    position: relative;
   }
 
   @media screen and (min-width: 1200px) {

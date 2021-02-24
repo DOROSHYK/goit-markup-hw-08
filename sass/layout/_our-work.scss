@@ -3,6 +3,12 @@
   padding-top: 94px;
 }
 
+.about-our-work {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .section .out-work {
   margin-top: 0;
   margin-bottom: 50px;
