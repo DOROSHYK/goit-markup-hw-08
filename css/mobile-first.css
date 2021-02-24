@@ -195,7 +195,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -221,19 +221,19 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .auto-margin {
     margin-left: auto;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .site-nav .item + .item {
     margin-left: 50px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .icon-maill {
     content: '';
     display: flex;
@@ -241,25 +241,30 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .icon-maill {
     content: '';
     display: flex;
     position: relative;
+  }
+}
+
+.maill {
+  fill: #757575;
+}
+
+.link:hover .maill,
+.link:focus .maill {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .maill {
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .maill {
-    fill: #757575;
-  }
-  .link:hover .maill,
-  .link:focus .maill {
-    fill: #2196f3;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-width: 768px) {
   .maill {
     height: 14px;
     width: 10px;
@@ -267,7 +272,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .maill {
     height: 12px;
     width: 16px;
@@ -275,7 +280,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .icon-tel {
     content: '';
     display: inline-flex;
@@ -283,25 +288,30 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .icon-tel {
     content: '';
     display: inline-flex;
     position: relative;
+  }
+}
+
+.tel {
+  fill: #757575;
+}
+
+.link:hover .tel,
+.link:focus .tel {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .tel {
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .tel {
-    fill: #757575;
-  }
-  .link:hover .tel,
-  .link:focus .tel {
-    fill: #2196f3;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-width: 768px) {
   .tel {
     height: 10px;
     width: 14px;
@@ -309,22 +319,19 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .tel {
-    fill: #757575;
     height: 16px;
     width: 10px;
     margin-right: 10px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .item .link:hover, .item .link:focus {
-    color: #2196f3;
-  }
+.item .link:hover, .item .link:focus {
+  color: #2196f3;
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .item .link {
     display: flex;
     align-items: center;
