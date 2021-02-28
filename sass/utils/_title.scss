@@ -6,3 +6,9 @@
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .advantages-title {
+    text-align: center;
+  }
+}
