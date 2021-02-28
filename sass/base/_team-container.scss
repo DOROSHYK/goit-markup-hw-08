@@ -1,6 +1,6 @@
 .team-container {
   margin-bottom: 0;
-  width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 
@@ -8,4 +8,12 @@
   padding-right: 15px;
 
   background-color: $our-team;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-container {
+    width: 1200px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

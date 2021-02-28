@@ -1,7 +1,7 @@
 .social {
   padding: 0;
   padding-top: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   display: inline-flex;
 }
 
@@ -42,5 +42,11 @@
 .team-link {
   &:not(:last-child) {
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social {
+    padding-bottom: 30px;
   }
 }
