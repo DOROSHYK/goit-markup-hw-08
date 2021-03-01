@@ -21,6 +21,12 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  .main-nav__logo {
+    text-align: center;
+  }
+}
+
 .main-nav__logo-black {
   color: $main-color-titles-color;
 }

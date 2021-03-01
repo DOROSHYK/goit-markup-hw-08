@@ -1,16 +1,14 @@
+footer .color {
+  color: $white-bg-color;
+  padding-bottom: 0;
+  text-align: center;
+  display: block;
+}
+
 .webstudio-cont {
   margin-left: 0px;
-
-  // @media screen and (min-width: 1200px) {
-  //   .webstudio-cont {
-  //     margin-left: 70px;
-  //   }
-  // }
-}
-@media screen and (min-width: 1200px) {
-  .webstudio-cont {
-    margin-left: 70px;
-  }
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .our-social-link {
@@ -23,6 +21,14 @@
   color: $white-bg-color;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.webstudio-cont {
+  margin-left: 0px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .webstydio-social-list {
@@ -30,6 +36,7 @@
   margin-top: 20px;
   padding-left: 0;
   display: flex;
+  justify-content: center;
 }
 
 .webstydio-link {
@@ -45,7 +52,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--color-forces-color);
+    background-color: $color-forces-color;
   }
 }
 
@@ -61,7 +68,83 @@
   }
 }
 
-footer .color {
-  color: var(--white-bg-color);
-  padding-bottom: 0;
-}
+// .webstudio-cont {
+//   margin-left: 0px;
+//   margin-top: 60px;
+//   margin-bottom: 60px;
+// }
+
+// // @media screen and (min-width: 1200px) {
+// //   .webstudio-cont {
+// //     margin-left: 70px;
+// //   }
+// // }
+
+// @media screen and (min-width: 768px) {
+//   .webstudio-cont {
+//     margin-left: 0px;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .webstudio-cont {
+//     margin-left: 70px;
+//   }
+// }
+
+// .our-social-link {
+//   font-family: Roboto;
+
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   color: $white-bg-color;
+//   margin-top: 0;
+//   margin-bottom: 0;
+//   text-align: center;
+//   margin-bottom: 20px;
+// }
+
+// .webstydio-social-list {
+//   margin-bottom: 0;
+//   margin-top: 20px;
+//   padding-left: 0;
+//   display: flex;
+// }
+
+// .webstydio-link {
+//   content: '';
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 44px;
+//   height: 44px;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   border-radius: 50%;
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--color-forces-color);
+//   }
+// }
+
+// .social-icon-footer {
+//   width: 20px;
+//   height: 20px;
+//   fill: #ffffff;
+// }
+
+// .webstydio-item {
+//   &:not(:last-child) {
+//     margin-right: 10px;
+//   }
+// }
+
+// footer .color {
+//   color: $white-bg-color;
+//   padding-bottom: 0;
+// }
