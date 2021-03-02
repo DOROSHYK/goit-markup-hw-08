@@ -520,7 +520,7 @@ ul {
   margin-right: auto;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header-mobileimg@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/Header-mobileimg@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1345,6 +1345,7 @@ footer .color {
 @media screen and (min-width: 768px) {
   .tablet-footer {
     display: flex;
+    justify-content: space-evenly;
   }
 }
 
