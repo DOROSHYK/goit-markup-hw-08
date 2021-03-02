@@ -10,25 +10,35 @@
   padding-bottom: 4px;
 }
 
+.examples .variety {
+  color: $massive-text-color;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .examples {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
 .examples-work {
-  margin-right: 30px;
   margin-bottom: 30px;
+  display: block;
 
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-last-child(-n + 3) {
+  &:last-child {
     margin-bottom: 0;
   }
+}
+
+.examples-cont {
+  padding: 20px 24px;
 }
 
 .examples-focus {
@@ -47,20 +57,6 @@
 
 .examples-focus {
   overflow: hidden;
-}
-
-.examples .variety {
-  color: $massive-text-color;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.examples-cont {
-  padding: 20px 24px;
 }
 
 .portfolio-image {
@@ -88,13 +84,6 @@
   }
 }
 
-// .examples-focus:hover .portfolio-image::before,
-// .examples-focus:focus .portfolio-image::before {
-//   transform: translateY(0);
-//   opacity: 1;
-//   background-color: rgba(33, 150, 243, 0.9);
-// }
-
 .examples-description {
   position: absolute;
   width: 100%;
@@ -110,15 +99,9 @@
   .examples-focus:hover &,
   .examples-focus:focus & {
     opacity: 1;
-    color: var(--white-bg-color);
+    color: $white-bg-color;
   }
 }
-
-// .examples-focus:hover .examples-description,
-// .examples-focus:focus .examples-description {
-//   opacity: 1;
-//   color: var(--white-bg-color);
-// }
 
 .description {
   font-family: Roboto;
@@ -129,3 +112,130 @@
   letter-spacing: 0.03em;
   padding: 63px 24px;
 }
+
+@media screen and (min-width: 768px) {
+  .examples-work {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .examples-work {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  .portfolio-image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+
+    opacity: 0;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .examples-focus:hover &,
+    .examples-focus:focus & {
+      transform: translateY(0);
+      opacity: 1;
+      background-color: rgba(33, 150, 243, 0.9);
+    }
+  }
+
+  .examples-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    /* overflow: auto; */
+
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .examples-focus:hover &,
+    .examples-focus:focus & {
+      opacity: 1;
+      color: $white-bg-color;
+    }
+  }
+}
+
+// .examples-focus {
+//   overflow: hidden;
+// }
+
+// .examples-cont {
+//   padding: 20px 24px;
+// }
+
+// .portfolio-image {
+//   position: relative;
+//   display: block;
+// }
+
+// .portfolio-image::before {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   transform: translateY(100%);
+
+//   opacity: 0;
+
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   .examples-focus:hover &,
+//   .examples-focus:focus & {
+//     transform: translateY(0);
+//     opacity: 1;
+//     background-color: rgba(33, 150, 243, 0.9);
+//   }
+// }
+
+// .examples-description {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 50%;
+//   left: 50%;
+//   /* overflow: auto; */
+
+//   opacity: 0;
+//   transform: translate(-50%, -50%);
+//   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   .examples-focus:hover &,
+//   .examples-focus:focus & {
+//     opacity: 1;
+//     color: var(--white-bg-color);
+//   }
+// }
+
+// .description {
+//   font-family: Roboto;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.56;
+
+//   letter-spacing: 0.03em;
+//   padding: 63px 24px;
+// }

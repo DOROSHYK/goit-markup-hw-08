@@ -1,7 +1,26 @@
 .work-nav {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+.navigation {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+// .navigation {
+//   margin-top: 0;
+//   margin-bottom: 50px;
+//   @include flex-center();
+//   // display: flex;
+//   // justify-content: center;
+//   // text-align: center;
+//   padding-bottom: 0;
+//   padding-left: 0;
+// }
 
 .navigation .nav-title {
   color: $main-color-titles-color;
@@ -32,16 +51,28 @@
 .navigation-page {
   &:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
+  }
+
+  &:nth-child(n + 4) {
+    margin-bottom: 0;
   }
 }
 
-.navigation {
-  margin-top: 0;
-  margin-bottom: 50px;
-  @include flex-center();
-  // display: flex;
-  // justify-content: center;
-  // text-align: center;
-  padding-bottom: 0;
-  padding-left: 0;
+@media screen and (min-width: 768px) {
+  .navigation {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-nav {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .navigation {
+    margin-bottom: 50px;
+  }
 }
