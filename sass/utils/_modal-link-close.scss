@@ -1,9 +1,7 @@
 .modal-link {
   position: absolute;
   @include flex-center();
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+
   width: 30px;
   height: 30px;
   background-color: transparent;
