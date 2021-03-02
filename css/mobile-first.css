@@ -1409,13 +1409,16 @@ footer .color {
     align-items: flex-start;
     margin-left: 93px;
   }
+  .button-subscribe {
+    margin-left: 20px;
+  }
+  .you-email {
+    width: 358px;
+    height: 50px;
+  }
   .button-subscribe-container {
     display: inline-flex;
     text-align: center;
-  }
-  .button-subscribe {
-    margin-left: 12px;
-    padding-top: 10px;
   }
 }
 
