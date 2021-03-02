@@ -70,7 +70,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
-    margin-bottom: 100px;
+    flex-wrap: wrap;
+  }
+
+  .form-footer {
+    margin-top: 100px;
   }
 
   .footer-email-form {
@@ -79,6 +83,22 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .form-footer {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 93px;
+  }
+
+  .button-subscribe-container {
+    display: inline-flex;
+
+    text-align: center;
+  }
+
+  .button-subscribe {
+    margin-left: 12px;
+    padding-top: 10px;
+  }
 }
 
 // .form-footer {

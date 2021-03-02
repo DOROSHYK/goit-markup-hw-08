@@ -35,8 +35,8 @@ footer {
 }
 
 .main-addres .mail-link {
-  margin-bottom: 6px;
-  margin-top: 9px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .main-addres .tell-link {
@@ -46,7 +46,8 @@ footer {
 
 footer .link {
   color: rgba(255, 255, 255, 0.6);
-
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: $main-letter-spacing;
@@ -58,6 +59,14 @@ footer .link {
 }
 
 @media screen and (min-width: 1200px) {
+  .main-addres .mail-link {
+    margin-bottom: 9px;
+    margin-top: 9px;
+  }
+
+  .webstudio-cont {
+    margin-left: 70px;
+  }
 }
 
 // footer {
