@@ -13,18 +13,25 @@ footer {
   margin-bottom: 20px;
   padding-bottom: 0;
   padding-top: 0;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .logotype {
+    text-align: center;
+  }
+  .main-addres {
+    text-align: center;
+  }
+
+  .map-link {
+    text-align: center;
+  }
 }
 
 .main-addres {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  text-align: center;
-}
-
-.map-link {
-  text-align: center;
 }
 
 .main-addres .mail-link {
@@ -48,6 +55,9 @@ footer .link {
   &:focus {
     color: $color-forces-color;
   }
+}
+
+@media screen and (min-width: 1200px) {
 }
 
 // footer {

@@ -520,7 +520,7 @@ ul {
   margin-right: auto;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/Header-mobileimg@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header-mobileimg@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -540,7 +540,7 @@ ul {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header-mobileimg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header-mobileimg@1x.jpg);
   }
 }
 
@@ -1169,6 +1169,13 @@ ul {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 footer {
   background-color: #2f303a;
   padding-bottom: 60px;
@@ -1184,18 +1191,24 @@ footer {
   margin-bottom: 20px;
   padding-bottom: 0;
   padding-top: 0;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .logotype {
+    text-align: center;
+  }
+  .main-addres {
+    text-align: center;
+  }
+  .map-link {
+    text-align: center;
+  }
 }
 
 .main-addres {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  text-align: center;
-}
-
-.map-link {
-  text-align: center;
 }
 
 .main-addres .mail-link {
@@ -1241,7 +1254,6 @@ footer .color {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -1291,8 +1303,9 @@ footer .color {
 }
 
 .you-email {
-  width: calc((100% - 15px * 2));
-  height: 50px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
   margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1346,6 +1359,11 @@ footer .color {
   .tablet-footer {
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 100px;
+  }
+  .footer-email-form {
+    display: inline-block;
   }
 }
 
