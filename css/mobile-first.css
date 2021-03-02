@@ -1171,8 +1171,9 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .container-footer {
-    display: flex;
+    width: 1200px;
     align-items: baseline;
+    display: flex;
   }
 }
 
@@ -1309,15 +1310,25 @@ footer .color {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1199px) {
+  .our-social-link {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .our-social-link {
+    margin-bottom: 20px;
+  }
+  .webstudio-cont {
+    margin-top: 0;
     margin-bottom: 0;
+    margin-left: 70px;
   }
 }
 
 .form-footer {
   justify-content: center;
-  text-align: center;
 }
 
 .you-email {
@@ -1380,11 +1391,15 @@ footer .color {
     align-items: baseline;
     flex-wrap: wrap;
   }
-  .form-footer {
-    margin-top: 100px;
-  }
+}
+
+@media screen and (max-width: 1199px) {
   .footer-email-form {
     display: inline-block;
+  }
+  .form-footer {
+    margin-top: 100px;
+    text-align: center;
   }
 }
 

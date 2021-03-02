@@ -1,7 +1,7 @@
 .form-footer {
   //   display: flex;
   justify-content: center;
-  text-align: center;
+  // text-align: center;
   //   align-items: flex-start;
   //   margin-left: 93px;
 }
@@ -72,13 +72,17 @@
     align-items: baseline;
     flex-wrap: wrap;
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-email-form {
+    display: inline-block;
+  }
 
   .form-footer {
     margin-top: 100px;
-  }
 
-  .footer-email-form {
-    display: inline-block;
+    text-align: center;
   }
 }
 
