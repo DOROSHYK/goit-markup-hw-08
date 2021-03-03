@@ -15,10 +15,6 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.section .team-margin {
-  margin-bottom: 30px;
-}
-
 .section .worker {
   display: block;
   font-weight: 500;
@@ -59,17 +55,29 @@
   .our-team {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
   }
 
   .our-team > .team {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 2 * 15px) / 2);
     margin-right: 30px;
     margin-top: 30px;
+
+    &:nth-child(-n + 2) {
+      margin-top: 0;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .team:nth-child(n + 3) {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .section .team-margin {
+    margin-bottom: 30px;
   }
 }
 

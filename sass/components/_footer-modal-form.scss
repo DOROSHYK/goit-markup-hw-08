@@ -65,15 +65,6 @@
   display: inline-block;
 }
 
-@media screen and (min-width: 768px) {
-  .tablet-footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .footer-email-form {
     display: inline-block;
@@ -85,6 +76,24 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .tablet-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   .tablet-footer {
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: baseline;
+//     flex-wrap: wrap;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .form-footer {

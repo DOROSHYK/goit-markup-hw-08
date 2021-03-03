@@ -73,6 +73,14 @@ footer .color {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .webstudio-cont {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .our-social-link {
     margin-bottom: 20px;
