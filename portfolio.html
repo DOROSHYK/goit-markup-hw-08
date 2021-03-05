@@ -147,33 +147,43 @@
                 
                  <ul class="navigation">
                     <li class="navigation-page">
-                        <button class="nav-title" type="button">Все</button>
+                         <!-- <button class="nav-title" type="button">Все</button>  -->
+                        <input id="all" class="radiobutton" type="radio" name="cards" value="all" checked onclick="showHideCards(this)" />
+                        <label class="nav-title" for="all">Все</label>
                     </li>
 
                     <li class="navigation-page">
-                        <button class="nav-title" type="button"> Веб-сайты</button>
+                        <!-- <button class="nav-title" type="button"> Веб-сайты</button> -->
+                        <input id="web" class="radiobutton" type="radio" name="cards" value="web" onclick="showHideCards(this)" />
+                        <label class="nav-title" for="web">Веб-сайты</label>
                     </li>
 
                     <li class="navigation-page">
-                    <button class="nav-title" type="button">Приложения</button>
+                    <!-- <button class="nav-title" type="button">Приложения</button> -->
+                    <input id="app" class="radiobutton" type="radio" name="cards" value="app" onclick="showHideCards(this)" />
+                    <label class="nav-title" for="app">Приложения</label>
+                    </li>
+
+                    <li class="navigation-page" >
+                        <!-- <button class="nav-title" type="button"> Дизайн</button> -->
+                            <input id="design" class="radiobutton" type="radio" name="cards" value="design" onclick="showHideCards(this)" />
+                            <label class="nav-title" for="design">Дизайн</label>
                     </li>
 
                     <li class="navigation-page">
-                        <button class="nav-title" type="button"> Дизайн</button>
-                    </li>
-
-                    <li class="navigation-page">
-                        <button class="nav-title" type="button">Маркетинг</button>
+                        <!-- <button class="nav-title" type="button">Маркетинг</button> -->
+                        <input id="marketing" class="radiobutton" type="radio" name="cards" value="marketing" onclick="showHideCards(this)" />
+                        <label class="nav-title" for="marketing">Маркетинг</label>
                     </li>
                     
                 </ul> 
                 
                 <!-- examples of work -->
-                <a href="./img/portfolio/desctop/img1desc@1.jpg 1x,"></a>
-                <a href="./img/portfolio/desctop/img1desc@2.jpg"></a>
+                
+               
 
                  <ul class="examples">
-                    <li class="examples-work">
+                    <li class="examples-work" name="web-card">
                         
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
@@ -202,7 +212,7 @@
                      
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="design-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
                                 <picture>
@@ -231,7 +241,7 @@
                 
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="app-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
 
@@ -260,7 +270,7 @@
                 
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="marketing-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
 
@@ -289,7 +299,7 @@
                 
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="app-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
                                 <picture>
@@ -318,7 +328,7 @@
                 
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="web-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
                                 <picture>
@@ -347,7 +357,7 @@
                 
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="design-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
                                 <picture>
@@ -376,7 +386,7 @@
                 
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="marketing-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
                                 <picture>
@@ -405,7 +415,7 @@
                 
                     </li>
                 
-                    <li class="examples-work">
+                    <li class="examples-work" name="app-card">
                         <a class="examples-focus" href="">
                             <div class="portfolio-image">
                                 <picture>
@@ -539,5 +549,6 @@
 </footer>
 
 <script src="./js/mobile.js"></script>
+<script src="./js/portfolio-filter.js"></script>
 </body>
 </html>
